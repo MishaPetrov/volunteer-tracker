@@ -60,7 +60,7 @@ describe Volunteer do
       volunteer = Volunteer.new({:name => 'Jane', :project_id => 1, :id => nil})
       volunteer.save
       volunteer.update({:name => 'Jessica'})
-      expect(project.title).to eq 'Jessica'
+      expect(volunteer.name).to eq 'Jessica'
     end
   end
 end
