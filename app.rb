@@ -20,3 +20,22 @@ post('/') do
   @projects_list = Project.all()
   erb(:index)
 end
+
+get('/projects/:id') do
+  id = params.fetch("id").to_i()
+  @project = Project.find(id)
+  erb(:project)
+end
+
+get('/projects/:id/edit') do
+  id = params.fetch("id").to_i()
+  @project = Project.find(id)
+  erb(:detail)
+end
+
+patch("/projects/:id/edit") do
+  title = params.fetch("title")
+  @project = Project.find(params.fetch("id").to_i())
+  @project.update({:title => title})
+  erb(:detail)
+end
