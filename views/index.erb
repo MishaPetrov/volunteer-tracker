@@ -11,9 +11,9 @@
       <td>
         <ul>
           <% project.volunteers().each do |volunteer| %>
-          <li><a href="/volunteers/<%= volunteer.id()%>"><% volunteer.id() %></a></li>
+          <li><a href="/volunteers/<%= volunteer.id()%>"><%= volunteer.name() %></a></li>
           <% end %>
-        </ul> 
+        </ul>
       </td>
     </tr>
   <% end %>
