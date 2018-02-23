@@ -31,13 +31,13 @@ class Volunteer
     @id = result.first().fetch("id").to_i()
   end
 
-#   def self.find(id)
-#     found_volunteer = nil
-#     Volunteer.all().each() do |project|
-#       if project.id().==(id)
-#         found_project = project
-#       end
-#     end
-#     found_project
-#   end
-# end
+  def self.find(id)
+    found_volunteer = nil
+    Volunteer.all().each() do |volunteer|
+      if volunteer.id().==(id)
+        found_volunteer = volunteer
+      end
+    end
+    found_volunteer
+  end
+end
