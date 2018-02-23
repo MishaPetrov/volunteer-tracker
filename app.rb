@@ -6,8 +6,6 @@ require('./lib/volunteer')
 require('pry')
 require('pg')
 
-DB = PG.connect({:dbname => "volunteer_tracker_test"})
-
 get('/') do
   @projects_list = Project.all()
   erb(:index)
@@ -38,4 +36,11 @@ patch("/projects/:id/edit") do
   @project = Project.find(params.fetch("id").to_i())
   @project.update({:title => title})
   erb(:detail)
+end
+
+delete("/projects/:id/edit") do
+  @project = Project.find(params.fetch("id").to_i())
+  @project.delete()
+  @projects_list = Project.all()
+  erb(:index)
 end
