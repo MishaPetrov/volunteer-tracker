@@ -1,8 +1,23 @@
+<h1><%= @project.title %></h1>
+<a href="/projects/<%= @project.id()%>/edit">Edit Project</a>
 <div class="panel" id="add_project">
   <div class="panel-heading">
-    <h1><%= @project.title %></h1>
+    <h1>Volunteers for <%= @project.title %></h1>
   </div>
   <div class="panel-body">
-  <a href="/projects/<%= @project.id()%>/edit">Edit Project</a> </td>"
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Volunteer ID number</th>
+        <th>Volunteer name</th>
+      </tr>
+    </thead>
+    <% @volunteers_list.each do |volunteer| %>
+      <tr>
+        <td> <a href="/volunteers/<%= volunteer.id()%>"><%= volunteer.id() %></a> </td>
+        <td> <a href="/volunteers/<%= volunteer.name()%>"><%= volunteer.name() %></a> </td>
+      </tr>
+    <% end %>
+  </table>
   </div>
 </div>

@@ -22,6 +22,7 @@ end
 get('/projects/:id') do
   id = params.fetch("id").to_i()
   @project = Project.find(id)
+  @volunteers_list = @project.volunteers()
   erb(:project)
 end
 
@@ -43,4 +44,19 @@ delete("/projects/:id/edit") do
   @project.delete()
   @projects_list = Project.all()
   erb(:index)
+end
+
+get('/volunteers/:id') do
+  id = params.fetch("id").to_i()
+  @project = Project.find(id)
+  @volunteers_list = @project.volunteers()
+  erb(:project)
+end
+
+post('/volunteers/:id') do
+  name = params.fetch("name").to_i()
+  id = params.fetch("id").to_i()
+  @project = Project.find(id)
+  @volunteers_list = @project.volunteers()
+  erb(:project)
 end
