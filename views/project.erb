@@ -15,7 +15,7 @@
     <% @volunteers_list.each do |volunteer| %>
       <tr>
         <td> <a href="/volunteers/<%= volunteer.id()%>"><%= volunteer.id() %></a> </td>
-        <td> <a href="/volunteers/<%= volunteer.name()%>"><%= volunteer.name() %></a> </td>
+        <td> <a href="/volunteers/<%= volunteer.id()%>"><%= volunteer.name() %></a> </td>
       </tr>
     <% end %>
   </table>

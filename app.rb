@@ -6,6 +6,15 @@ require('./lib/volunteer')
 require('pry')
 require('pg')
 
+DB = PG.connect({:dbname => 'volunteer_tracker_test'})
+
+@project = Project.new(:title => "ruby", :id => nil)
+@project.save()
+volunteer = Volunteer.new(:name => "Misha Petrov", :project_id => @project.id(), :id => nil)
+volunteer.save()
+volunteer2 = Volunteer.new(:name => "Andrew Peterson", :project_id => @project.id(), :id => nil)
+volunteer2.save()
+
 get('/') do
   @projects_list = Project.all()
   erb(:index)
@@ -47,16 +56,13 @@ delete("/projects/:id/edit") do
 end
 
 get('/volunteers/:id') do
-  id = params.fetch("id").to_i()
-  @project = Project.find(id)
-  @volunteers_list = @project.volunteers()
-  erb(:project)
+  @volunteer = Volunteer.find(params.fetch("id").to_i())
+  erb(:volunteer)
 end
 
-post('/volunteers/:id') do
-  name = params.fetch("name").to_i()
-  id = params.fetch("id").to_i()
-  @project = Project.find(id)
-  @volunteers_list = @project.volunteers()
-  erb(:project)
+patch("/volunteers/:id/edit") do
+  name = params.fetch("name")
+  @volunteer = Volunteer.find(params.fetch("id").to_i())
+  @volunteer.update({:name => name})
+  erb(:volunteer)
 end

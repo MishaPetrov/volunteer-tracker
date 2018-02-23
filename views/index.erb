@@ -8,7 +8,13 @@
   <% @projects_list.each do |project| %>
     <tr>
       <td> <a href="/projects/<%= project.id()%>"><%= project.title() %></a> </td>
-      <td> <a href="/projects/<%= project.id()%>"><%=  %></a> </td>
+      <td>
+        <ul>
+          <% project.volunteers().each do |volunteer| %>
+          <li><a href="/volunteers/<%= volunteer.id()%>"><% volunteer.id() %></a></li>
+          <% end %>
+        </ul> 
+      </td>
     </tr>
   <% end %>
 </table>
