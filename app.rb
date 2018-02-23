@@ -66,3 +66,10 @@ patch("/volunteers/:id/edit") do
   @volunteer.update({:name => name})
   erb(:volunteer)
 end
+
+delete("/volunteers/:id/edit") do
+  @volunteer = Volunteer.find(params.fetch("id").to_i())
+  @volunteer.delete()
+  @volunteers_list = Project.all()
+  erb(:index)
+end
