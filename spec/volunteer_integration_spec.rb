@@ -75,3 +75,17 @@ describe 'the volunteer detail page path', {:type => :feature} do
     expect(page).not_to have_content('Jasmine')
   end
 end
+
+describe 'the volunteer creation path', {:type => :feature} do
+  it 'takes the user to the page where they can add a volunteer' do
+    test_project = Project.new({:title => 'Teaching Kids to Code', :id => nil})
+    test_project.save
+    project_id = test_project.id.to_i
+    test_volunteer = Volunteer.new({:name => 'Jasmine', :project_id => project_id, :id => nil})
+    test_volunteer.save
+    visit "/projects/#{project_id}"
+    fill_in('name', :with => 'Jane')
+    click_button('Add Volunteer')
+    expect(page).to have_content('Jane')
+  end
+end

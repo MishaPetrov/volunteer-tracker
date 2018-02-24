@@ -22,3 +22,18 @@
   </table>
   </div>
 </div>
+
+<div class="panel" id="add_project">
+  <div class="panel-heading">
+    <h4>Add a New Volunteer</h4>
+  </div>
+  <div class="panel-body">
+    <form action="/projects/<%= @project.id() %>" method="post">
+      <div class="form-group">
+        <label for="title">Volunteer's Name</label>
+        <input id="name" name="name" class="form-control" type="text">
+      </div>
+      <button type="submit" class="btn-lg">Add Volunteer</button>
+    </form>
+  </div>
+</div>
