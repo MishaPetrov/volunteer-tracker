@@ -1,0 +1,21 @@
+<div id="back_btn"><a href="/"><button class="btn btn-default">Home</a></div>
+<div class="panel" id="add_project">
+  <div class="panel-heading">
+    <h1><%= @volunteer.name %></h1>
+  </div>
+  <div class="panel-body">
+    Edit
+    <form action="/volunteers/<%= @volunteer.id()%>/edit" method="post">
+      <input name="_method" type="hidden" value="patch">
+      <div class="form-group">
+        <label for="name">Volunteer's Name</label>
+        <input id="name" name="name" class="form-control" type="text">
+      </div>
+      <button type="submit" class="btn-lg">Update Volunteer</button>
+    </form>
+    <form action="/volunteers/<%= @volunteer.id()%>/edit" method="post">
+      <input name="_method" type="hidden" value="delete">
+      <button type="submit">Delete Volunteer</button>
+    </form>
+  </div>
+</div>

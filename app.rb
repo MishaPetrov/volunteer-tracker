@@ -8,13 +8,6 @@ require('pg')
 
 DB = PG.connect({:dbname => 'volunteer_tracker_test'})
 
-@project = Project.new(:title => "ruby", :id => nil)
-@project.save()
-volunteer = Volunteer.new(:name => "Misha Petrov", :project_id => @project.id(), :id => nil)
-volunteer.save()
-volunteer2 = Volunteer.new(:name => "Andrew Peterson", :project_id => @project.id(), :id => nil)
-volunteer2.save()
-
 get('/') do
   @projects_list = Project.all()
   @volunteers_list = Volunteer.all()
