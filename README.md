@@ -4,6 +4,8 @@
 
 #### By _**Misha Petrov**_
 
+![view 1](https://i.imgur.com/3bnIbdd.png)
+
 ## Setup/Installation Requirements
 
 #### You can view the app live by visiting: (currently unavailable)
@@ -44,14 +46,13 @@ _modesau@gmail.com_
 
 Ruby, Sinatra, Postgres, HTML, CSS
 
-## Screenshots
-
-![view 1](https://i.imgur.com/3bnIbdd.png)
-![view 2](https://i.imgur.com/rtY4oPo.png)
-![view 3](https://i.imgur.com/kUlOuDG.png)
-
 ### License
 
 *Licensed under MIT license*
 
 Copyright (c) 2018 **_Misha Petrov_**
+
+## Screenshots
+
+![view 2](https://i.imgur.com/rtY4oPo.png)
+![view 3](https://i.imgur.com/kUlOuDG.png)
