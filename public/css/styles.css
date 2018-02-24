@@ -12,9 +12,34 @@ body {
   background-color: rgba(255, 255, 255, 0.99);
 }
 
+a {
+  color: #141414;
+}
+
+.panel-heading {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
 ul {
   list-style: none;
   margin-left: -3em;
+}
+
+th#v{
+  text-align: center !important;
+}
+
+#title {
+  text-align: center;
+  margin-top: 40px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#volunteer {
+  width: 70%;
 }
 
 #plist {
@@ -22,4 +47,32 @@ ul {
   margin-right: auto;
   width: 90%;
   text-align: left;
+}
+
+#vlist {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+#edit {
+  display: block;
+  background-color: #f7f7f7;
+  color: #000;
+  width: 130px;
+  padding: 5px;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#edit:hover {
+  background-color: #fff2f2;
+  text-decoration: none;
+}
+
+#back_btn {
+  padding-left: 40px;
+  padding-top: 40px;
+  float: left;
 }
