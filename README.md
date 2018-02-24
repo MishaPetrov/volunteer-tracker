@@ -9,14 +9,19 @@
 Clone to your local machine. In terminal, navigate to the root directory of the project
 Recreate the database by using the following commands in terminal:
 
-_createdb [volunteer_tracker]_
-_psql [volunteer_tracker] < my_database.sql_
-_createdb -T [volunteer_tracker] [volunteer_tracker_test]_
+_$ createdb [volunteer_tracker]_
+
+_$ psql [volunteer_tracker] < my_database.sql_
+
+_$ createdb -T [volunteer_tracker] [volunteer_tracker_test]_
 
 Use this command in terminal to run app on the localhost:
+
 _$ ruby app.rb_
 
-Test the code by typing _rspec_ in terminal
+Test the code by typing (in terminal): 
+
+_$ rspec_ 
 
 ## Specifications (use case scenarios)
 
