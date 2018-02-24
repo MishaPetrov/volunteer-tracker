@@ -1,12 +1,10 @@
-![view 1](https://i.imgur.com/3bnIbdd.png)
-
 # Volunteer Tracker
 
 #### _Simple app to tracks projects and assign volunteers_
 
 #### By _**Misha Petrov**_
 
-
+![view 1](https://i.imgur.com/3bnIbdd.png)
 
 ## Setup/Installation Requirements
 
