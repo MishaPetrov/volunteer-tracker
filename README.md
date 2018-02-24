@@ -15,13 +15,16 @@ _$ psql [volunteer_tracker] < my_database.sql_
 
 _$ createdb -T [volunteer_tracker] [volunteer_tracker_test]_
 
+
 Use this command in terminal to run app on the localhost:
 
 _$ ruby app.rb_
 
+
 Test the code by typing (in terminal): 
 
 _$ rspec_ 
+
 
 ## Specifications (use case scenarios)
 
