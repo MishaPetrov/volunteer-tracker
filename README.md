@@ -6,7 +6,7 @@
 
 ## Setup/Installation Requirements
 
-#### You can view the app live by visiting:
+#### You can view the app live by visiting: (currently unavailable)
 
 _https://enigmatic-sierra-89342.herokuapp.com/_
 
@@ -43,6 +43,12 @@ _modesau@gmail.com_
 ## Technologies Used
 
 Ruby, Sinatra, Postgres, HTML, CSS
+
+## Screenshots
+
+![view 1](https://i.imgur.com/3bnIbdd.png)
+![view 2](https://i.imgur.com/rtY4oPo.png)
+![view 3](https://i.imgur.com/kUlOuDG.png)
 
 ### License
 
