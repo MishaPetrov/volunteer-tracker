@@ -1,5 +1,5 @@
 body {
-  background: url('../img/bg.png')
+  background: url('../img/bg.png') fixed;
 }
 
 .panel {
@@ -9,11 +9,15 @@ body {
   border: 0;
   border-radius: 20px;
   margin-top: 40px;
-  background-color: rgba(255, 255, 255, 0.99);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 a {
   color: #141414;
+}
+
+.btn-lg {
+  margin: 5px;
 }
 
 .panel-heading {
@@ -32,10 +36,15 @@ th#v{
 
 #title {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+}
+
+#edit-panel {
+  width: 70%;
+  margin-top: 80px;
 }
 
 #volunteer {
