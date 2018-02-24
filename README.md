@@ -1,10 +1,12 @@
+![view 1](https://i.imgur.com/3bnIbdd.png)
+
 # Volunteer Tracker
 
 #### _Simple app to tracks projects and assign volunteers_
 
 #### By _**Misha Petrov**_
 
-![view 1](https://i.imgur.com/3bnIbdd.png)
+
 
 ## Setup/Installation Requirements
 
@@ -46,13 +48,15 @@ _modesau@gmail.com_
 
 Ruby, Sinatra, Postgres, HTML, CSS
 
+## Screenshots
+
+![view 2](https://i.imgur.com/rtY4oPo.png)
+![view 3](https://i.imgur.com/kUlOuDG.png)
+
+
 ### License
 
 *Licensed under MIT license*
 
 Copyright (c) 2018 **_Misha Petrov_**
 
-## Screenshots
-
-![view 2](https://i.imgur.com/rtY4oPo.png)
-![view 3](https://i.imgur.com/kUlOuDG.png)
