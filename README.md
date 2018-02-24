@@ -1,4 +1,4 @@
-# volunteer-tracker
+# Volunteer Tracker
 
 #### _Simple app to tracks projects and assign volunteers_
 
