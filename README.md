@@ -6,7 +6,7 @@
 
 ## Setup/Installation Requirements
 
-#### You can view the app live by visiting
+#### You can view the app live by visiting:
 
 _https://enigmatic-sierra-89342.herokuapp.com/_
 
