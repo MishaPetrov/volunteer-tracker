@@ -6,6 +6,10 @@
 
 ## Setup/Installation Requirements
 
+You can view the app live by visiting
+
+_https://enigmatic-sierra-89342.herokuapp.com/_
+
 Clone to your local machine. In terminal, navigate to the root directory of the project
 Recreate the database by using the following commands in terminal:
 
