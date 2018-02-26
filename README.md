@@ -17,19 +17,20 @@ _https://enigmatic-sierra-89342.herokuapp.com/_
 Clone to your local machine. In terminal, navigate to the root directory of the project
 Recreate the database by using the following commands in terminal:
 
-###### _$ createdb [volunteer_tracker]_
+* _`$ createdb [volunteer_tracker]`_
 
-###### _$ psql [volunteer_tracker] < my_database.sql_
+* _`$ psql [volunteer_tracker] < my_database.sql`_
 
-###### _$ createdb -T [volunteer_tracker] [volunteer_tracker_test]_
+* _`$ createdb -T [volunteer_tracker] [volunteer_tracker_test]`_
 
 Use this command in terminal to run app on the localhost:
 
-###### _$ ruby app.rb_
+* _`$ ruby app.rb`_
 
-Test the code by typing (in terminal): 
+## Running tests
 
-###### _$ rspec_ 
+This app includes unit and integration testing using RSpec.
+Run `bundle exec rspec` in terminal to test.
 
 ## Specifications (use case scenarios)
 
